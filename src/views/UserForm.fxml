@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="1000.0" prefWidth="1728.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserFormController">
+    <children>
+        <AnchorPane fx:id="menuContext" layoutX="28.0" layoutY="99.0" prefHeight="200.0" prefWidth="315.0" style="-fx-background-color: white; -fx-background-radius: 50 0 0 50;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="24.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="26.0">
+                    <image>
+                        <Image url="@../asserts/logo.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="84.0" layoutY="32.0" text="Hansana Furnitures" textFill="#535353" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="32.0">
+                    <font>
+                        <Font name="Roboto Bold" size="24.0" />
+                    </font>
+                </Label>
+                <JFXButton alignment="BASELINE_LEFT" layoutX="49.0" layoutY="133.0" onAction="#btnDashboardOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Dashboard" textFill="#cdcdcd" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="DASHBOARD" size="30" />
+                    </graphic>
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" layoutY="188.0" onAction="#btnItemsOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Items" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="SHOPPING_BAG" size="30" />
+                    </graphic>
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" layoutY="243.0" onAction="#btnCustomerOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Customers" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="SLIDESHARE" size="30" />
+                    </graphic>
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" layoutY="299.0" onAction="#btnSalesOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Sales" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="MONEY" size="30" />
+                    </graphic>
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" layoutY="355.0" onAction="#btnPlaceOrderOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Place Orders" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="CART_PLUS" size="30" />
+                    </graphic>
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" layoutY="466.0" onAction="#btnCreditOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="   Credits" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="CREDIT_CARD_ALT" size="30" />
+                    </graphic>
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" layoutY="521.0" onAction="#btnReturnOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="    Returns" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="NEWSPAPER_ALT" size="30" />
+                    </graphic>
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" layoutY="795.0" onAction="#btnLogOutOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="    Logout" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+                    <opaqueInsets>
+                        <Insets top="10.0" />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="SIGN_OUT" size="30" text="" />
+                    </graphic>
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" layoutY="411.0" onAction="#btnPaymentOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="    Payments" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="CC" size="30" />
+                    </graphic>
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="5.0" layoutY="577.0" onAction="#btnEditProfileOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="    Edit Profile" textFill="#cdcdcd">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="EDIT" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="backgroundContext" layoutX="315.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 0 50 50 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane fx:id="topBar" layoutX="86.0" layoutY="23.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 0 50 0 30;" stylesheets="@../asserts/Style.css" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="CLOSE" layoutX="1328.0" layoutY="44.0" onMouseClicked="#closeOnAction" size="30" styleClass="glyph-icon-close" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="24.0">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></FontAwesomeIconView>
+                        <FontAwesomeIconView fx:id="btnMin" fill="#cdcdcd" glyphName="MINUS" layoutX="1292.1428565979004" layoutY="53.0" onMouseClicked="#minimizeOnAction" size="30" styleClass="glyph-icon-minus" AnchorPane.rightAnchor="67.28571510314941">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></FontAwesomeIconView>
+                        <Circle fill="WHITE" layoutX="988.0" layoutY="37.0" radius="20.0" stroke="#cdcdcd" strokeType="INSIDE" AnchorPane.rightAnchor="276.0" />
+                        <FontAwesomeIconView fill="#cdcdcd" glyphName="USER" layoutX="1075.0" layoutY="47.0" size="30" AnchorPane.rightAnchor="284.4285717010498" />
+                        <Label fx:id="lblUserName" layoutX="1136.0" layoutY="28.0" style="-fx-font-family: roboto;" text="Sample Name" textFill="#cdcdcd" AnchorPane.rightAnchor="153.0">
+                            <font>
+                                <Font name="Ubuntu" size="15.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Label>
+                        <Label fx:id="lblHeader" layoutX="561.0" layoutY="24.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Dashboard" textFill="#ffc42a">
+                            <font>
+                                <Font name="Ubuntu" size="15.0" />
+                            </font>
+                        </Label>
+                        <JFXToggleButton fx:id="btnDarkMode" layoutX="867.0" layoutY="9.0" onAction="#btnDarkModeOnAction" prefHeight="40.0" prefWidth="143.0" text="Dark Mode" textFill="#a7a7a7" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                            <font>
+                                <Font name="Roboto" size="14.0" />
+                            </font>
+                        </JFXToggleButton>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="viewContext" layoutX="30.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F3F3F3;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+                    <children>
+                        <AnchorPane layoutX="998.0" layoutY="88.0" prefHeight="200.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+                            <effect>
+                                <DropShadow color="#cdcdcd" offsetY="4.0" />
+                            </effect>
+                     <children>
+                        <JFXButton layoutX="32.0" layoutY="28.0" onAction="#btnOrderOnAction" prefHeight="148.0" prefWidth="315.0" text="      Place Order" textFill="#a7a7a7">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a7a7a7" glyphName="CART_PLUS" size="100" />
+                           </graphic>
+                           <font>
+                              <Font name="Roboto" size="24.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <Line endX="-56.0" endY="-28.0" layoutX="122.0" layoutY="28.0" startX="-121.0" startY="33.0" stroke="#a7a7a7" />
+                     </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="41.0" layoutY="631.0" prefHeight="552.0" prefWidth="852.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="495.0" AnchorPane.topAnchor="308.0">
+                            <effect>
+                                <DropShadow color="#cdcdcd" offsetY="4.0" />
+                            </effect>
+                     <children>
+                        <ImageView fitHeight="526.0" fitWidth="823.0" layoutX="163.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asserts/userDashboard.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="996.0" layoutY="639.0" prefHeight="200.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="10.0">
+                            <effect>
+                                <DropShadow color="#cdcdcd" offsetY="4.0" />
+                            </effect>
+                            <children>
+                                <JFXButton fx:id="lblClock" layoutX="63.0" layoutY="35.0" style="-fx-font-family: roboto; -fx-font-size: 34;" text="10 : 27 : 00 AM" textFill="#ffc029" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="56.0" />
+                                <JFXButton fx:id="lblDate" layoutX="101.0" layoutY="130.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="2022 - 02 - 04" textFill="#ffc029" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+                            </children>
+                        </AnchorPane>
+                  <AnchorPane layoutX="559.0" layoutY="30.0" prefHeight="200.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.rightAnchor="495.0" AnchorPane.topAnchor="30.0">
+                     <effect>
+                        <DropShadow color="#cdcdcd" offsetY="4.0" />
+                     </effect>
+                     <children>
+                        <JFXButton layoutX="20.0" layoutY="28.0" onAction="#btnMakePaymentOnAction" prefHeight="148.0" prefWidth="327.0" text="      Make Payment" textFill="#a7a7a7">
+                           <font>
+                              <Font name="Roboto" size="24.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#a7a7a7" glyphName="CREDIT_CARD_ALT" size="70" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <Line endX="-56.0" endY="-28.0" layoutX="122.0" layoutY="28.0" startX="-121.0" startY="33.0" stroke="#a7a7a7" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="55.0" layoutY="30.0" prefHeight="200.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="30.0">
+                     <effect>
+                        <DropShadow color="#cdcdcd" offsetY="4.0" />
+                     </effect>
+                     <children>
+                        <JFXButton layoutX="20.0" layoutY="28.0" onAction="#btnAddCustomerOnAction" prefHeight="148.0" prefWidth="327.0" text="      Add Customer" textFill="#a7a7a7">
+                           <font>
+                              <Font name="Roboto" size="24.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#a7a7a7" glyphName="SLIDESHARE" size="90" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <Line endX="-56.0" endY="-28.0" layoutX="121.0" layoutY="28.0" startX="-121.0" startY="33.0" stroke="#a7a7a7" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="992.0" layoutY="308.0" prefHeight="200.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="308.0">
+                     <effect>
+                        <DropShadow color="#cdcdcd" offsetY="4.0" />
+                     </effect>
+                     <children>
+                        <JFXButton layoutX="20.0" layoutY="28.0" onAction="#btnItemListOnAction" prefHeight="148.0" prefWidth="327.0" text="      Item List" textFill="#a7a7a7">
+                           <font>
+                              <Font name="Roboto" size="24.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#a7a7a7" glyphName="SHOPPING_BAG" size="80" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <Line endX="-56.0" endY="-28.0" layoutX="122.0" layoutY="28.0" startX="-121.0" startY="33.0" stroke="#a7a7a7" />
+                     </children>
+                  </AnchorPane>
+                    </children></AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

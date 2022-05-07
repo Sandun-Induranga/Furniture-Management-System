@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="viewContext" prefHeight="880.0" prefWidth="1373.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminDashboardFormController">
+   <children>
+      <AnchorPane layoutX="199.0" layoutY="64.0" prefHeight="585.0" prefWidth="948.0" style="-fx-background-radius: 20; -fx-background-color: white;" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <BarChart fx:id="barChart" layoutX="25.0" layoutY="111.0" prefHeight="418.0" prefWidth="896.0" style="-fx-background-color: white;" stylesheets="@../asserts/Style.css">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <Label layoutX="114.0" layoutY="23.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Total Revenue" textFill="#a7a7a7" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRev" layoutX="50.0" layoutY="71.0" style="-fx-font-family: roboto; -fx-font-size: 34;" text="100000 Rs" textFill="#535353" AnchorPane.leftAnchor="50.0">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="755.0" layoutY="45.0" promptText="This Year" style="-fx-background-color: #FFF8E5; -fx-background-radius: 7;" styleClass="my-list-cell" stylesheets="@../asserts/Style.css">
+               <effect>
+                  <DropShadow color="#9a8e8e" offsetY="4.0" />
+               </effect>
+            </ComboBox>
+         </children>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#cdcdcd" offsetY="4.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="998.0" layoutY="88.0" prefHeight="250.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label layoutX="31.0" layoutY="24.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Total Sales in This Month" textFill="#a7a7a7" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="24.0">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalSales" layoutX="122.0" layoutY="105.0" style="-fx-font-family: roboto; -fx-font-size: 34;" text="8 Sales" textFill="#535353">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="110.0" layoutY="188.0" onAction="#btnViewSalesOnAction" style="-fx-font-family: roboto; -fx-font-size: 20;" text="View Details" textFill="#ffc029">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="#cdcdcd" offsetY="4.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="998.0" layoutY="365.0" prefHeight="250.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.rightAnchor="10.0">
+         <children>
+            <Label layoutX="31.0" layoutY="24.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Credit Not Paid" textFill="#a7a7a7" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="24.0">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCredit" layoutX="122.0" layoutY="105.0" style="-fx-font-family: roboto; -fx-font-size: 34;" text="5 Sales" textFill="#535353">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="110.0" layoutY="188.0" onAction="#btnViewCreditOnAction" style="-fx-font-family: roboto; -fx-font-size: 20;" text="View Details" textFill="#ffc029">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="#cdcdcd" offsetY="4.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="41.0" layoutY="631.0" prefHeight="200.0" prefWidth="948.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="27.0">
+         <children>
+            <Label layoutX="31.0" layoutY="24.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Top Products" textFill="#a7a7a7" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="52.0" layoutY="54.0" prefHeight="130.0" prefWidth="266.0" style="-fx-background-color: #FFF8E5; -fx-background-radius: 20;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="38.0">
+               <children>
+                  <Label fx:id="top4" layoutX="115.0" layoutY="57.0" text="Label" textFill="#cdcdcd" AnchorPane.bottomAnchor="30.0">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="top11" layoutX="115.0" layoutY="38.0" text="Label" textAlignment="CENTER" textFill="#a7a7a7" AnchorPane.topAnchor="45.0">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="359.0" layoutY="55.0" prefHeight="130.0" prefWidth="266.0" style="-fx-background-color: #FFF8E5; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="341.0">
+               <children>
+                  <Label fx:id="top5" layoutX="115.0" layoutY="57.0" text="Label" textFill="#cdcdcd" AnchorPane.bottomAnchor="30.0">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="top22" layoutX="117.0" layoutY="46.0" text="Label" textAlignment="CENTER" textFill="#a7a7a7" AnchorPane.topAnchor="45.0">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="654.0" layoutY="40.0" prefHeight="130.0" prefWidth="266.0" style="-fx-background-color: #FFF8E5; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="645.0">
+               <children>
+                  <Label fx:id="top6" layoutX="115.0" layoutY="82.0" text="Label" textFill="#cdcdcd" AnchorPane.bottomAnchor="32.0">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="top33" layoutX="115.0" layoutY="49.0" text="Label" textAlignment="CENTER" textFill="#a7a7a7" AnchorPane.topAnchor="45.0">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </children>
+         <effect>
+            <DropShadow color="#cdcdcd" offsetY="4.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="996.0" layoutY="639.0" prefHeight="200.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="10.0">
+         <effect>
+            <DropShadow color="#cdcdcd" offsetY="4.0" />
+         </effect>
+         <children>
+            <JFXButton fx:id="lblClock" layoutX="63.0" layoutY="35.0" style="-fx-font-family: roboto; -fx-font-size: 34;" text="10 : 27 : 00 AM" textFill="#ffc029" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="56.0" />
+            <JFXButton fx:id="lblDate" layoutX="101.0" layoutY="130.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="2022 - 02 - 04" textFill="#ffc029" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="900.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoryFormController">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="32.0" prefHeight="500.0" prefWidth="850.0" style="-fx-background-radius: 50; -fx-background-color: white;" stylesheets="@../asserts/Style.css">
+         <children>
+            <AnchorPane layoutX="376.0" layoutY="143.0" prefHeight="307.0" prefWidth="404.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.bottomAnchor="38.0" AnchorPane.rightAnchor="66.0">
+               <children>
+                  <TableView fx:id="tblCategory" layoutX="9.0" layoutY="11.0" prefHeight="285.0" prefWidth="389.0" stylesheets="@../asserts/Style.css">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="106.0" text="ID" />
+                      <TableColumn fx:id="colName" prefWidth="173.0" text="Name" />
+                        <TableColumn fx:id="colOptions" prefWidth="106.0" style="-fx-alignment: center;" text="Options" />
+                    </columns>
+                  </TableView>
+               </children>
+               <effect>
+                  <DropShadow color="#cdcdcd" offsetY="4.0" />
+               </effect>
+            </AnchorPane>
+            <JFXButton layoutX="683.0" layoutY="32.0" style="-fx-border-color: #2EC4B6; -fx-border-radius: 7;" text="REFRESH" textFill="#2ec4b6" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="70.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/refresh.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ubuntu" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtId" focusColor="#ffc42a" layoutX="201.0" layoutY="43.0" onKeyReleased="#txtFieldsKeyReleased" prefWidth="250.0" promptText="ID" style="-fx-prompt-text-fill: #A7A7A7;" unFocusColor="#a7a7a7" AnchorPane.topAnchor="43.0">
+               <font>
+                  <Font name="Ubuntu" size="20.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="75.0" layoutY="57.0" text="Category ID" textFill="#a7a7a7" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Ubuntu" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtName" focusColor="#ffc42a" layoutX="201.0" layoutY="95.0" onKeyReleased="#txtFieldsKeyReleased" prefWidth="250.0" promptText="Name" style="-fx-prompt-text-fill: #A7A7A7;" unFocusColor="#a7a7a7">
+               <font>
+                  <Font name="Ubuntu" size="20.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="38.0" layoutY="123.0" text="Category Name" textFill="#a7a7a7" AnchorPane.topAnchor="102.0">
+               <font>
+                  <Font name="Ubuntu" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnAddCategory" layoutX="70.0" layoutY="167.0" onAction="#btnAddCategoryOnAction" style="-fx-border-color: #FFC42A; -fx-border-radius: 7;" text="ADD CATEGORY" textFill="#ffc42a" AnchorPane.leftAnchor="70.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/item.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ubuntu" size="20.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="#cdcdcd" glyphName="CLOSE" layoutX="803.0" layoutY="34.0" onMouseClicked="#btnCloseOnAction" size="20" styleClass="glyph-icon-close" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <ImageView fitHeight="277.0" fitWidth="307.0" layoutX="59.0" layoutY="216.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/category.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="113.0" layoutY="462.0" prefHeight="24.0" prefWidth="200.0" style="-fx-background-color: white;" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

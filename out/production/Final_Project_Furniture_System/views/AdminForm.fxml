@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="1000.0" prefWidth="1728.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminFormController">
+   <children>
+      <AnchorPane fx:id="menuContext" layoutX="28.0" layoutY="99.0" prefHeight="200.0" prefWidth="315.0" style="-fx-background-color: white; -fx-background-radius: 50 0 0 50;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="24.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="26.0">
+               <image>
+                  <Image url="@../asserts/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="84.0" layoutY="32.0" text="Hansana Furnitures" textFill="#535353" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="32.0">
+               <font>
+                  <Font name="Roboto Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="49.0" layoutY="133.0" onAction="#btnDashboardOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Dashboard" textFill="#cdcdcd" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="DASHBOARD" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="188.0" onAction="#btnItemsOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Items" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="SHOPPING_BAG" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="243.0" onAction="#btnSupplierOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="      Suppliers" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="USER_SECRET" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="298.0" onAction="#btnCustomerOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Customers" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="SLIDESHARE" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="353.0" onAction="#btnSalesOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Sales" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="MONEY" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="408.0" onAction="#btnBuysOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Buys" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="SORT_AMOUNT_ASC" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="463.0" onAction="#btnPlaceOrderOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Place Orders" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="CART_PLUS" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="573.0" onAction="#btnCreditOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="   Credits" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="CREDIT_CARD_ALT" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="628.0" onAction="#btnReturnOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="    Returns" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="NEWSPAPER_ALT" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="683.0" onAction="#btnUsersOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="    Users" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="USERS" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="736.0" onAction="#btnReportsOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="     Reports" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="FILE" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="795.0" onAction="#btnLogOutOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="    Logout" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="SIGN_OUT" size="30" text="" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="518.0" onAction="#btnPaymentOnAction" prefHeight="50.0" prefWidth="315.0" style="-fx-focus-traversable: false;" styleClass="dashboard-button" stylesheets="@../asserts/Style.css" text="    Payments" textFill="#cdcdcd" AnchorPane.rightAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="CC" size="30" />
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="backgroundContext" layoutX="315.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 0 50 50 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="topBar" layoutX="86.0" layoutY="23.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 0 50 0 30;" stylesheets="@../asserts/Style.css" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="CLOSE" layoutX="1328.0" layoutY="44.0" onMouseClicked="#closeOnAction" size="30" styleClass="glyph-icon-close" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="24.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="btnMin" fill="#cdcdcd" glyphName="MINUS" layoutX="1292.1428565979004" layoutY="53.0" onMouseClicked="#minimizeOnAction" size="30" styleClass="glyph-icon-minus" AnchorPane.rightAnchor="67.28571510314941">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></FontAwesomeIconView>
+                  <Circle fill="WHITE" layoutX="1087.0" layoutY="41.0" radius="20.0" stroke="#cdcdcd" strokeType="INSIDE" AnchorPane.rightAnchor="276.0" />
+                  <FontAwesomeIconView fill="#cdcdcd" glyphName="USER" layoutX="1075.2857112884521" layoutY="51.0" size="30" AnchorPane.rightAnchor="284.14286041259766" />
+                  <Label fx:id="lblName" layoutX="1117.0" layoutY="28.0" style="-fx-font-family: roboto; -fx-font-size: 20;" text="Sample Name" textFill="#cdcdcd">
+                     <font>
+                        <Font name="Ubuntu" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="lblHeader" layoutX="561.0" layoutY="24.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Dashboard" textFill="#ffc42a">
+                     <font>
+                        <Font name="Ubuntu" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXToggleButton fx:id="btnDarkMode" layoutX="867.0" layoutY="9.0" onAction="#btnDarkModeOnAction" prefHeight="40.0" prefWidth="143.0" text="Dark Mode" textFill="#a7a7a7" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </JFXToggleButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="viewContext" layoutX="30.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F3F3F3;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <AnchorPane layoutX="199.0" layoutY="64.0" prefHeight="585.0" prefWidth="948.0" style="-fx-background-radius: 20; -fx-background-color: white;" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <BarChart fx:id="barChart" layoutX="25.0" layoutY="111.0" prefHeight="418.0" prefWidth="896.0" style="-fx-background-color: white;" styleClass="chart-bar" stylesheets="@../asserts/Style.css">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <Label layoutX="114.0" layoutY="23.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Total Revenue" textFill="#a7a7a7" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="34.0">
+                           <font>
+                              <Font name="Ubuntu" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblRev" layoutX="50.0" layoutY="71.0" style="-fx-font-family: roboto; -fx-font-size: 34;" text="100000 Rs" textFill="#535353" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font name="Ubuntu" size="15.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="755.0" layoutY="45.0" promptText="This Year" style="-fx-background-color: #FFF8E5; -fx-background-radius: 7;" styleClass="my-list-cell" stylesheets="@../asserts/Style.css">
+                           <effect>
+                              <DropShadow color="#9a8e8e" offsetY="4.0" />
+                           </effect>
+                        </ComboBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="#cdcdcd" offsetY="4.0" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="998.0" layoutY="88.0" prefHeight="250.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Label layoutX="44.0" layoutY="26.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Total Sales in This Month" textFill="#a7a7a7" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="26.0">
+                           <font>
+                              <Font name="Ubuntu" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotalSale" layoutX="122.0" layoutY="105.0" style="-fx-font-family: roboto; -fx-font-size: 34;" text="8 Sales" textFill="#535353">
+                           <font>
+                              <Font name="Ubuntu" size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="110.0" layoutY="188.0" onAction="#btnViewSalesOnAction" style="-fx-font-family: roboto; -fx-font-size: 20;" text="View Details" textFill="#ffc029">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXButton>
+                     </children>
+                     <effect>
+                        <DropShadow color="#cdcdcd" offsetY="4.0" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="998.0" layoutY="365.0" prefHeight="250.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <Label layoutX="96.0" layoutY="26.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Credit Not Paid" textFill="#a7a7a7" AnchorPane.leftAnchor="96.0" AnchorPane.topAnchor="26.0">
+                           <font>
+                              <Font name="Ubuntu" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCredit" layoutX="122.0" layoutY="105.0" style="-fx-font-family: roboto; -fx-font-size: 34;" text="5 Sales" textFill="#535353">
+                           <font>
+                              <Font name="Ubuntu" size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="110.0" layoutY="188.0" onAction="#btnViewCreditOnAction" style="-fx-font-family: roboto; -fx-font-size: 20;" text="View Details" textFill="#ffc029">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXButton>
+                     </children>
+                     <effect>
+                        <DropShadow color="#cdcdcd" offsetY="4.0" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="41.0" layoutY="631.0" prefHeight="200.0" prefWidth="948.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="27.0">
+                     <children>
+                        <Label layoutX="31.0" layoutY="24.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="Top Products" textFill="#a7a7a7" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Ubuntu" size="15.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="52.0" layoutY="54.0" prefHeight="130.0" prefWidth="266.0" style="-fx-background-color: #FFF8E5; -fx-background-radius: 20;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="38.0">
+                           <children>
+                              <Label fx:id="top1" layoutX="115.0" layoutY="76.0" text="Label" textFill="#cdcdcd" AnchorPane.bottomAnchor="30.0">
+                                 <font>
+                                    <Font name="Roboto" size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="top11" layoutX="115.0" layoutY="45.0" text="Label" textAlignment="CENTER" textFill="#a7a7a7" AnchorPane.topAnchor="45.0">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="359.0" layoutY="55.0" prefHeight="130.0" prefWidth="266.0" style="-fx-background-color: #FFF8E5; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="341.0">
+                           <children>
+                              <Label fx:id="top2" layoutX="115.0" layoutY="57.0" text="Label" textFill="#cdcdcd" AnchorPane.bottomAnchor="30.0">
+                                 <font>
+                                    <Font name="Roboto" size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="top22" layoutX="115.0" layoutY="49.0" text="Label" textAlignment="CENTER" textFill="#a7a7a7">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="654.0" layoutY="40.0" prefHeight="130.0" prefWidth="266.0" style="-fx-background-color: #FFF8E5; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="645.0">
+                           <children>
+                              <Label fx:id="top3" layoutX="115.0" layoutY="57.0" text="Label" textFill="#cdcdcd" AnchorPane.bottomAnchor="30.0">
+                                 <font>
+                                    <Font name="Roboto" size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="top33" layoutX="115.0" layoutY="49.0" text="Label" textAlignment="CENTER" textFill="#a7a7a7">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                     </children>
+                     <effect>
+                        <DropShadow color="#cdcdcd" offsetY="4.0" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="996.0" layoutY="639.0" prefHeight="200.0" prefWidth="367.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="10.0">
+                     <effect>
+                        <DropShadow color="#cdcdcd" offsetY="4.0" />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="lblClock" layoutX="63.0" layoutY="35.0" style="-fx-font-family: roboto; -fx-font-size: 34;" text="10 : 27 : 00 AM" textFill="#ffc029" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="56.0" />
+                        <JFXButton fx:id="lblDate" layoutX="101.0" layoutY="130.0" style="-fx-font-family: roboto; -fx-font-size: 24;" text="2022 - 02 - 04" textFill="#ffc029" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

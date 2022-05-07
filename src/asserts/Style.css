@@ -1,0 +1,145 @@
+.home-button {
+    -fx-background-color: linear-gradient(to right top, #fe6d73, #ff845d, #ffa342, #ffc622, #ffea00);
+}
+
+.home-button:hover {
+    -fx-background-color: linear-gradient(to right top, #cbb902, #ecaf06, #e77d0d, #ef3e07, #fe6d73);
+}
+
+.dashboard-button {
+    -fx-text-fill: #CDCDCD;
+    -fx-font-family: roboto;
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+
+.dashboard-button:hover {
+    -fx-text-fill: #ffc42a;
+}
+
+.dashboard-button:pressed {
+    -fx-text-fill: #ffc42a;
+}
+
+.combo-box .cell {
+    -fx-text-fill: #FFC029;
+    -fx-font: 12px "Ubuntu";
+    -fx-font-weight: bold;
+}
+
+.my-list-cell {
+    -fx-font: 12px "Ubuntu";
+    -fx-text-fill: #FFC029;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: #FFC029;
+    -fx-padding: 4 0 4 5;
+    -fx-background-radius: 20;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #27a527;
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+
+.table-view:focused {
+    -fx-background-color: transparent;
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -> column-header */
+
+.table-view .column-header-background {
+    -fx-background-color: #FFC029;
+    -fx-background-radius: 5;
+    -fx-font-size: 15;
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-font-family: Roboto;
+    -fx-text-fill: #A7A7A7;
+    -fx-font-size: 15;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, #ffffff;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-table-cell-border-color, #ffffff;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #fff8e5;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-row-cell {
+    -fx-border-color: white;
+    -fx-table-cell-border-color: white;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+.font-text {
+    -fx-font-family: "Roboto";
+}
+
+.glyph-icon-close:hover {
+    -fx-fill: #9b2226;
+}
+
+.glyph-icon-minus:hover {
+    -fx-fill: #FFC029;
+}
+
+.jfx-date-picker {
+    -fx-border-color: #FFC029;
+    -jfx-unfocus-color: #FFC029;
+    -fx-border-radius: 5;
+}
+
+.jfx-date-picker .jfx-text-field {
+    -fx-font-size: 15;
+    -fx-prompt-text-fill: #CDCDCD;
+    -fx-border-color: transparent;
+    -jfx-unfocus-color: transparent;
+}
+
+.chart-bar {
+    -fx-background-color: #FFC029;
+    -fx-background-radius: 0;
+    -fx-background-position: left center;
+}

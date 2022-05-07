@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="880.0" prefWidth="1373.0" style="-fx-background-color: #F3F3F3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlaceOrderFormController">
+    <children>
+        <AnchorPane layoutX="23.0" layoutY="48.0" prefHeight="80.0" prefWidth="1336.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="2.0">
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="#cdcdcd" offsetY="4.0" />
+            </effect>
+         <children>
+            <JFXButton layoutX="65.0" layoutY="18.0" style="-fx-border-color: #FB8500; -fx-border-radius: 10;" text="VIEW ITEMS AND CUSTOMERS" textFill="#fb8500" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="18.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/view.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="845.0" layoutY="31.0" text="Date : " textFill="#cdcdcd">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="1087.0" layoutY="31.0" text="Time : " textFill="#cdcdcd">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="lblDate" layoutX="910.0" layoutY="24.0" textFill="#a7a7a7">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="lblTime" layoutX="1157.0" layoutY="24.0" textFill="#a7a7a7">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+        </AnchorPane>
+      <AnchorPane layoutX="27.0" layoutY="147.0" prefHeight="131.0" prefWidth="1336.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="110.0">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#cdcdcd" offsetY="4.0" />
+         </effect>
+         <children>
+            <ComboBox fx:id="cmbCusId" layoutX="44.0" layoutY="46.0" minHeight="40.0" prefWidth="200.0" promptText="Customer ID" style="-fx-background-color: transparent; -fx-border-color: #A7A7A7; -fx-border-radius: 10; -fx-font-size: 20; -fx-font-family: roboto; -fx-prompt-text-fill: #A7A7A7;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="45.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <JFXTextField fx:id="txtCusName" focusColor="#ffc42a" layoutX="310.0" layoutY="53.0" promptText="Customer Name" style="-fx-prompt-text-fill: #A7A7A7; -fx-text-fill: #A7A7A7;" unFocusColor="#a7a7a7" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="300.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAddress" focusColor="#ffc42a" layoutX="551.0" layoutY="48.0" promptText="Address" style="-fx-prompt-text-fill: #A7A7A7; -fx-text-fill: #A7A7A7;" unFocusColor="#a7a7a7" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="550.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPhoneNumber" focusColor="#ffc42a" layoutX="810.0" layoutY="47.0" promptText="Phone Number" style="-fx-prompt-text-fill: #A7A7A7; -fx-text-fill: #A7A7A7;" unFocusColor="#a7a7a7" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="800.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="1050.0" layoutY="43.0" onAction="#btnAddCustomerOnAction" style="-fx-border-color: #FFC42A; -fx-border-radius: 10;" text="ADD CUSTOMER" textFill="#ffc42a">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/item.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="27.0" layoutY="301.0" prefHeight="181.0" prefWidth="1336.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.topAnchor="291.0">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#cdcdcd" offsetY="4.0" />
+         </effect>
+         <children>
+            <ComboBox fx:id="cmbItemCode" layoutX="44.0" layoutY="46.0" minHeight="40.0" prefWidth="200.0" promptText="Item Code" style="-fx-background-color: transparent; -fx-border-color: #A7A7A7; -fx-border-radius: 10; -fx-font-size: 20; -fx-font-family: roboto; -fx-prompt-text-fill: #A7A7A7;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="45.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <JFXTextField fx:id="txtDes" focusColor="#ffc42a" layoutX="310.0" layoutY="53.0" promptText="Description" style="-fx-prompt-text-fill: #A7A7A7; -fx-text-fill: #A7A7A7;" unFocusColor="#a7a7a7" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtQty" focusColor="#ffc42a" layoutX="551.0" layoutY="48.0" onKeyReleased="#txtQtyOnAction" promptText="QTY" style="-fx-prompt-text-fill: #A7A7A7; -fx-text-fill: #A7A7A7;" unFocusColor="#a7a7a7" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPrice" focusColor="#ffc42a" layoutX="810.0" layoutY="47.0" promptText="Unit Price" style="-fx-prompt-text-fill: #A7A7A7; -fx-text-fill: #A7A7A7;" unFocusColor="#a7a7a7" AnchorPane.leftAnchor="800.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnAddToCart" layoutX="1101.0" layoutY="104.0" onAction="#btnAddToCartOnAction" style="-fx-border-color: #036666; -fx-border-radius: 10;" text="ADD TO CART" textFill="#036666" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="50.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtDiscount" focusColor="#ffc42a" layoutX="1039.0" layoutY="53.0" promptText="Discount" style="-fx-prompt-text-fill: #A7A7A7; -fx-text-fill: #A7A7A7;" unFocusColor="#a7a7a7" AnchorPane.leftAnchor="1050.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtQtyOnHand" focusColor="#ffc42a" layoutX="749.0" layoutY="108.0" promptText="QTY On Hand" style="-fx-prompt-text-fill: #CDCDCD; -fx-text-fill: #CDCDCD;" unFocusColor="#cdcdcd" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="800.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="27.0" layoutY="505.0" prefHeight="348.0" prefWidth="1336.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#cdcdcd" offsetY="4.0" />
+         </effect>
+         <children>
+            <TableView fx:id="tblCart" layoutX="35.0" layoutY="14.0" prefHeight="240.0" prefWidth="1245.0" style="-fx-border-color: #FFC42A; -fx-border-radius: 5;" stylesheets="@../asserts/Style.css" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="46.0">
+              <columns>
+                <TableColumn prefWidth="129.99996948242188" text="Item Code" />
+                <TableColumn prefWidth="222.00003051757812" text="Description" />
+                  <TableColumn prefWidth="178.0" text="Unit Price" />
+                  <TableColumn prefWidth="137.0" text="QTY" />
+                  <TableColumn prefWidth="203.0" text="Discount" />
+                  <TableColumn prefWidth="227.0" text="Total Cost" />
+                  <TableColumn prefWidth="143.0" text="----" />
+              </columns>
+            </TableView>
+            <Label layoutX="45.0" layoutY="289.0" text="Total" textFill="#a7a7a7" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0">
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalCost" layoutX="115.0" layoutY="289.0" text="0" textFill="#fb8500">
+               <font>
+                  <Font name="Roboto Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCheckOut" layoutX="1154.0" layoutY="280.0" onAction="#btnCheckOutOnAction" style="-fx-background-color: #e9c46a; -fx-background-radius: 10;" text="CHECK OUT" textFill="WHITE" AnchorPane.bottomAnchor="30.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnLoan" layoutX="901.0" layoutY="280.0" onAction="#btnLoanOnAction" style="-fx-background-color: #f4a261; -fx-background-radius: 10;" text="PURCHASE AS LOAN" textFill="WHITE" AnchorPane.bottomAnchor="30.0">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

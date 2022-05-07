@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="793.0" prefWidth="1251.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeFormController">
+   <children>
+      <AnchorPane layoutX="110.0" layoutY="500.0" prefHeight="276.0" prefWidth="1114.0" style="-fx-background-color: #52ab98; -fx-background-radius: 50 50 25 25;">
+         <children>
+            <Label layoutX="22.0" layoutY="246.0" text="Engineered by :  Sandun Induranga" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Ubuntu" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="977.0" layoutY="205.0" text="System Version 1.0.0" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font name="Ubuntu" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="441.0" fitWidth="437.0" layoutX="18.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/man.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="context" layoutX="345.0" layoutY="244.0" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2b6777; -fx-background-radius: 250 50 50 50;" stylesheets="@../asserts/Style.css">
+         <children>
+            <Label layoutX="83.0" layoutY="88.0" text="Hansana Furnitures" textFill="WHITE" AnchorPane.leftAnchor="83.0" AnchorPane.topAnchor="88.0">
+               <font>
+                  <Font name="Roboto Bold" size="65.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#495057" offsetY="10.0" />
+               </effect>
+            </Label>
+            <Circle fx:id="c1" fill="#52ab98" layoutX="168.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <Circle fx:id="c2" fill="#52ab98" layoutX="206.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <Circle fx:id="c3" fill="#52ab98" layoutX="243.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <Circle fx:id="c4" fill="#52ab98" layoutX="278.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <Circle fx:id="c5" fill="#52ab98" layoutX="315.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <Circle fx:id="c6" fill="#52ab98" layoutX="355.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <Circle fx:id="c7" fill="#52ab98" layoutX="395.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <Circle fx:id="c8" fill="#52ab98" layoutX="436.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <Circle fx:id="c9" fill="#52ab98" layoutX="478.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <Circle fx:id="c10" fill="#52ab98" layoutX="519.0" layoutY="214.0" radius="7.0" stroke="#c8d8e4" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.topAnchor="202.0" />
+            <JFXButton buttonType="RAISED" layoutX="149.0" layoutY="297.0" onAction="#btnAdminOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-radius: 10; -fx-focus-traversable: false; -fx-background-color: #c8d8e4; -fx-border-radius: 10;" styleClass="home-button" stylesheets="@../asserts/Style.css" text="ADMIN" textFill="#2b6777" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="134.0">
+               <font>
+                  <Font name="Ubuntu Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="407.0" layoutY="312.0" onAction="#btnUserOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-radius: 10; -fx-focus-traversable: false; -fx-background-color: #c8d8e4; -fx-border-radius: 10;" styleClass="home-button" stylesheets="@../asserts/Style.css" text="USER" textFill="#2b6777" AnchorPane.bottomAnchor="38.0" AnchorPane.rightAnchor="134.0">
+               <font>
+                  <Font name="Ubuntu Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="325.0" layoutY="262.0" text="Choose Your Role To Start" textFill="WHITE" AnchorPane.leftAnchor="257.0" AnchorPane.topAnchor="264.0">
+               <font>
+                  <Font name="Ubuntu Bold" size="15.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" layoutX="646.0" layoutY="36.0" onMouseClicked="#closeOnAction" size="30" styleClass="glyph-icon-close" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="btnMin" fill="WHITE" glyphName="MINUS" layoutX="610.0" layoutY="42.0" onMouseClicked="#btnMinusOnAction" size="20">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <Line endX="162.0" endY="103.0" layoutX="532.0" layoutY="29.0" startX="11.0" startY="-25.0" stroke="#d7be69" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="210.0" fitWidth="320.0" layoutX="671.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/welcome.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="280.0" layoutY="111.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 10; -fx-background-color: transparent;">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="180.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="11.0">
+               <image>
+                  <Image url="@../asserts/mainLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
