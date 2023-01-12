@@ -1,5 +1,5 @@
 # Furniture-Management-System
-This is a JavaFX stand-alone application
+This is a JavaFX stand-alone application (Full-Stack)
 
 
 ![Screenshot from 2022-04-10 07-45-06](https://user-images.githubusercontent.com/88975401/167269261-f0267621-0d2d-484c-9d89-4c16ce054929.png)
